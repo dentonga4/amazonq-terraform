@@ -10,7 +10,7 @@ terraform init
 terraform plan -var-file="environments/dev/terraform.tfvars"
 terraform apply -var-file="environments/dev/terraform.tfvars"
 
-# Test  
+# Test
 terraform plan -var-file="environments/test/terraform.tfvars"
 terraform apply -var-file="environments/test/terraform.tfvars"
 
