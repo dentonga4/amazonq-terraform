@@ -8,3 +8,28 @@ variable "environment" {
   description = "Environment name"
   type        = string
 }
+
+variable "vpc_cidr" {
+  description = "VPC CIDR range"
+  type        = string
+}
+
+variable "vpce_services_enable" {
+  description = "Private endpoints to AWS Services"
+  type        = list(string)
+}
+
+variable "vpc_cidr_public" {
+  description = "VPC Subnet Public CIDR range"
+  type        = map(string)
+}
+
+variable "vpc_cidr_private" {
+  description = "VPC Subnet Private CIDR range"
+  type        = map(string)
+}
+
+variable "vpc_cidr_data" {
+  description = "VPC Subnet Data CIDR range"
+  type        = map(string)
+}
