@@ -1,7 +1,7 @@
 module "vpc" {
-  source               = "git::https://github.com/dentonga4/terraform_default_vpc.git"
-  vpc_name             = "${var.environment}-vpc"
-  vpc_cidr             = var.vpc_cidr
+  source   = "git::https://github.com/dentonga4/terraform_default_vpc.git?ref=v1.0.0"
+  vpc_name = "${var.environment}-vpc"
+  vpc_cidr = var.vpc_cidr
 
   vpc_cidr_public = var.vpc_cidr_public
 
