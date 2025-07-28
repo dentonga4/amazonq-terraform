@@ -1,5 +1,5 @@
 module "eks" {
-  source = "git::https://github.com/dentonga4/terraform_default_eks.git?ref=v1.0.0"
+  source = "git::https://github.com/dentonga4/terraform_default_eks.git?ref=v2.0.0"
 
   cluster_name       = "${var.environment}-eks-cluster"
   kubernetes_version = var.kubernetes_version
