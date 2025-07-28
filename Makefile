@@ -19,19 +19,19 @@ plan-prod: init-prod
 	terraform plan -var-file="environments/prod/terraform.tfvars"
 
 apply-dev: init-dev
-	terraform apply -var-file="environments/dev/terraform.tfvars"
+	terraform apply -var-file="environments/dev/terraform.tfvars" -auto-approve
 
 apply-test: init-test
-	terraform apply -var-file="environments/test/terraform.tfvars"
+	terraform apply -var-file="environments/test/terraform.tfvars" -auto-approve
 
 apply-prod: init-prod
-	terraform apply -var-file="environments/prod/terraform.tfvars"
+	terraform apply -var-file="environments/prod/terraform.tfvars" -auto-approve
 
 destroy-dev: init-dev
-	terraform destroy -var-file="environments/dev/terraform.tfvars"
+	terraform destroy -var-file="environments/dev/terraform.tfvars" -auto-approve
 
 destroy-test: init-test
-	terraform destroy -var-file="environments/test/terraform.tfvars"
+	terraform destroy -var-file="environments/test/terraform.tfvars" -auto-approve
 
 destroy-prod: init-prod
-	terraform destroy -var-file="environments/prod/terraform.tfvars"
+	terraform destroy -var-file="environments/prod/terraform.tfvars" -auto-approve
